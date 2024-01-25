@@ -14,9 +14,9 @@ Final Result: Return 1 if the last element of the dynamic programming array is t
 
 ## BRUTE-FORCE APPROACH
 
-## (C++)
+## (JAVA)
 
-```c++
+```Java
 
 
 
