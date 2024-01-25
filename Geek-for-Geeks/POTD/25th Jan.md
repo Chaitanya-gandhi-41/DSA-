@@ -5,6 +5,7 @@ https://www.geeksforgeeks.org/problems/shortest-prime-path--141631/1
 
 ### Code (C++)
 
+````cpp
 class Solution {
 public:
     vector<bool> isPrime;
@@ -59,3 +60,4 @@ public:
         return -1;
     }
 };
+````
