@@ -3,6 +3,7 @@ https://leetcode.com/problems/longest-common-subsequence/submissions/1156729953/
 
 
 ### Code (C++)
+```cpp
 class Solution {
 public:
     int longestCommonSubsequence(string text1, string text2) {
@@ -27,3 +28,4 @@ int dp[text1Length + 1][text2Length + 1];
         return dp[text1Length][text2Length];
     }
 };
+```
