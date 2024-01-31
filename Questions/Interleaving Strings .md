@@ -1,7 +1,7 @@
 Question link-> https://www.interviewbit.com/problems/interleaving-strings/
 
-### C+++
-```cpp
+### JAVA
+```Java
 public class Solution {
     public int isInterleave(String A, String B, String C) {
         int lenA = A.length();
