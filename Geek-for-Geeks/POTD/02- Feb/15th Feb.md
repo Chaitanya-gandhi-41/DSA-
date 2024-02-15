@@ -1,34 +1,12 @@
-````Java
-import java.util.Stack;
-
-public class Solution {
-    public int evalRPN(String[] A) {
-        Stack<Integer> stack = new Stack<>();
-
-        for (String token : A) {
-            if (token.equals("+") || token.equals("-") || token.equals("*") || token.equals("/")) {
-                int b = stack.pop();
-                int a = stack.pop();
-                switch (token) {
-                    case "+":
-                        stack.push(a + b);
-                        break;
-                    case "-":
-                        stack.push(a - b);
-                        break;
-                    case "*":
-                        stack.push(a * b);
-                        break;
-                    case "/":
-                        stack.push(a / b);
-                        break;
-                }
-            } else {
-                stack.push(Integer.parseInt(token));
-            }
+````C++
+class Solution {
+public:
+    int isPossible(vector<vector<int>> paths){
+        for(auto i: paths){
+            if(accumulate(i.begin(), i.end(), 0) % 2 != 0)
+                return false;
         }
-
-        return stack.pop();
+        return true;
     }
-}
+};
 ````
