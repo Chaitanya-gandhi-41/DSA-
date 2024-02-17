@@ -20,3 +20,27 @@ public class Solution {
 }
 
 ````
+
+# Optimal 
+```cpp
+import java.util.HashSet;
+
+public class Solution {
+    // DO NOT MODIFY THE ARGUMENTS WITH "final" PREFIX. IT IS READ ONLY
+    public int repeatedNumber(final int[] A) {
+        HashSet<Integer> seen = new HashSet<>();
+
+        for (int num : A) {
+            if (seen.contains(num)) {
+                return num; // Found the repeated number
+            } else {
+                seen.add(num); // Add the number to the set if not seen before
+            }
+        }
+
+        return -1; // No repeated number found
+    }
+}
+
+```
+
