@@ -1,0 +1,15 @@
+# Question Link ->https://www.interviewbit.com/problems/trailing-zeros-in-factorial/
+
+```java
+public class Solution {
+    public int trailingZeroes(int A) {
+        int count = 0;
+        int i = 5;
+        while (A / i > 0) {
+            count += A / i;
+            i *= 5;
+        }
+        return count;
+    }
+}
+````
